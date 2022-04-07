@@ -1,28 +1,42 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: white;
+}
+.navbar-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links{
+    width: 50%;
 }
 
 .navigation-outside{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    background-color: white;
     list-style-type: none;
     width: 100%;
     min-width: 308px;
-    border-bottom: 3px solid grey;
-    display: flex;
-    flex-wrap: wrap;
-    position:fixed;
+    flex-wrap: nowrap;
+    position:relative;
     top: 0;
     left: 0;
     margin: 0px;
     padding: 0px;
 }
 
-ul li a{
-    padding: 4px 4px 4px 4px;
+
+ul div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul div li a{
+    padding: 4px 4px 3px 4px;
     margin: 16px 11px 0px 11px;
     float: left;
     color: black;
@@ -32,15 +46,197 @@ ul li a{
     text-decoration: none;
 }
 
-ul li a:hover{
-    transition: all ease-in 0.1s;
-    border-bottom: 2px solid black;
-    border-radius: 2px;
+ul div li a:hover{
+    transition: all ease 0.1s;
+    color: orangered;
 }
 
-ul li img{
+ul div img{
     justify-content: left;
     margin: 4px 12px 0px 4px;
     width: 50px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.starter-paragraph{
+    padding: 60px 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.split1{
+    width: 40%;
+}
+
+.split2{
+    width: 60%;
+    margin: 20px 0 0 0;
+}
+
+.greeting-image-section img{
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 5%;
+}
+
+.starter-paragraph-text-sizing{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+.starter-paragraph-text{
+    width: 100%;
+    padding: 5px 5px 5px 5px ;
+    max-width: 500px;
+    min-width: 304px;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: Bold;
+    font-size: 60px;
+    margin-left: 5%;
+}
+
+.outterButtonBox{
+    display: flex;
+    margin-left: 5%;
+}
+
+.buttonBox{ 
+    background-color: #33cc33;
+    margin: 40px 10px 0 10px;
+    border-radius: 5px;
+}
+
+.welcomeButton {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.welcomeButton-element {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.welcomeButton-element::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(75,65,65,0.1);
+    transition: all 0.3s;
+}
+
+.welcomeButton-element:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+
+.welcomeButton-element::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+
+.welcomeButton-element:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+@media only screen and (max-width: 920px){
+
+    .navbar-image{
+        width: 70px;
+        justify-content: center;
+    }
+
+    .navbar-links{
+        width: calc(100%-70px);
+    }
+    .greeting-image-section img{
+        margin: 0;
+    }
+
+    .starter-paragraph{
+        flex-direction: column;
+    }
+
+    .starter-paragraph-text-sizing{
+        margin: 10% 10px 5% 10px;
+        align-items: center;
+    }
+
+    .starter-paragraph-text{
+        min-width: 200px;
+        margin-left: 0%;
+    }
+
+    .split1{
+        width: 100%;
+    }
+    
+    .split2{
+        width: 100%;
+    }
+}
+
+/* Mobile aproach */
+@media only screen and (max-width: 600px){
+    .navbar-image{
+        width: 70px;
+        justify-content: center;
+    }
+
+    .welcomeButton{
+        line-height: 40px;
+        height: 40px;
+        width: 130px;
+    }
+
+    .navbar-links{
+        width: calc(100%-70px);
+    }
+
+    .starter-paragraph{
+        flex-direction: column;
+    }
+
+    .starter-paragraph-text{
+        margin: 5% 10% 5% 10%;
+        min-width: 200px;
+        font-size: 40px;
+    }
+
+    .greeting-image-section img{
+        margin: 0 0 0 0;
+    }
+
 }

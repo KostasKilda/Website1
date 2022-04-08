@@ -355,6 +355,14 @@ ul div li a:hover{
     .offer-inner-box-inside{
         font-size: 30px;
     }
+
+    .bottom-header{
+        font-size: 40px;
+    }
+
+    .bottom-footer{
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 920px){
@@ -515,6 +523,14 @@ ul div li a:hover{
 
     .bottom-text-inline{
         flex-direction: column;
+    }
+
+    .bottom-header{
+        font-size: 18px;
+    }
+
+    .bottom-footer{
+        font-size: 12px;
     }
 }
 

@@ -238,7 +238,7 @@ ul div li a:hover{
     border: 1px #C0C0C0 solid;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     min-width: 260px;
-    max-width: 500px;
+    max-width: 400px;
     width: 25%;
     max-height: 400px;
     text-align: center;
@@ -443,7 +443,11 @@ ul div li a:hover{
     }
 
     .usefulLinks-box-inside-header{
-        font-size: 18;
+        font-size: 18px;
+    }
+
+    .usefulLinks-box-inside-text{
+        font-size: 16px;
     }
 
     .usefulLinks-box img{

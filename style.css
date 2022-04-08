@@ -204,6 +204,7 @@ ul div li a:hover{
     font-weight: 580;
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    padding: 2% 2% 2% 2%;
 }
 
 .offer-inner-box-inside img{
@@ -334,6 +335,25 @@ ul div li a:hover{
 
     .headerText{
         font-size: 60px;
+    }
+
+    .offer-inner-box{
+        max-width: 325px;
+    }
+
+    .offer-inner-box-inside img{
+        width: 100px;
+        height: 100px;
+        margin: 15px 0 25px 0;
+    }
+
+    .offer-inner-box-inside img:hover{
+        width: 120px;
+        height: 120px;
+    }
+
+    .offer-inner-box-inside{
+        font-size: 30px;
     }
 }
 

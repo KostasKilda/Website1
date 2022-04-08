@@ -1,8 +1,9 @@
 body{
-    margin: 0;
-    padding: 0;
     background-color: white;
     min-width: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar css classes */
@@ -62,7 +63,8 @@ ul div li a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    margin: 0 0 40px 0;
+    align-items: center;
+    margin: 0 0 80px 0;
 }
 
 .split1{
@@ -79,7 +81,7 @@ ul div li a:hover{
     width: 100%;
     max-width: 900px;
     height: auto;
-        margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .starter-paragraph-text-sizing{
@@ -89,6 +91,7 @@ ul div li a:hover{
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    align-items: center;
 }
 
 .starter-paragraph-text{
@@ -121,6 +124,7 @@ ul div li a:hover{
   text-align: center;
   width: 250px;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
 }
 
 .welcomeButton-element {
@@ -165,17 +169,110 @@ ul div li a:hover{
     transform: scale(1,1);
 }
 
+.headerText{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
 
+.offer-inner{
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.offer-inner-box{
+    margin: 10px 20px 15px 20px;
+    border: 1px #C0C0C0 solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 225px;
+    min-width: 180px;
+    width: 15%;
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.offer-inner-box-inside{
+    vertical-align: baseline;
+    font-size: 20px;
+    font-weight: 580;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.offer-inner-box-inside img{
+    width: 70px;
+    height: 70px;
+    margin: 15px 0 25px 0;
+}
+
+.offer-inner-box-inside img:hover{
+    cursor: grab;
+    margin: 15px 0 5px 0;
+    width: 90px;
+    height: 90px;
+    transition: 0.5s;
+}
+
+.offer-box-margin{
+    margin: 0 0 20px 0;
+}
+
+.second-offer-box-spacing{
+    margin: 10px 0 0 0;
+}
+
+
+@media only screen and (min-width: 1570px){
+
+    ul div li a{
+        font-size: 40px;
+    }
+
+    .split1{
+        width: 50%;
+    }
+    
+    .split2{
+        width: 50%;
+    }
+
+    .starter-paragraph-text{
+        margin: 0;
+        max-width: 1000px;
+        font-size: 80px;
+    }
+
+    .welcomeButton{
+        line-height: 75px;
+        height: 75px;
+        width: 300px;
+        font-size: 30px;
+    }
+
+    .headerText{
+        font-size: 60px;
+    }
+}
 
 @media only screen and (max-width: 920px){
 
     .navbar-image{
-        width: 70px;
-        justify-content: center;
+        width: 0%;
     }
 
     .navbar-links{
-        width: calc(100%-70px);
+        width: 100%;
+    }
+
+    .starter-paragraph{
+        margin: 0 0 40px 0;
     }
 
     .starter-paragraph-text-sizing{
@@ -206,13 +303,41 @@ ul div li a:hover{
     .split2{
         width: 50%;
     }
+
+    .headerText{
+        font-size: 30px;
+    }
+
+    .offer-inner-box{
+        width: 20%;
+    }
+    .offer-inner-box-inside{
+        font-size: 16;
+    }
+
+    .offer-inner-box-inside img{
+        width: 40px;
+        height: 40px;
+        margin: 5px 0 15px 0;
+    }
+    
+    .offer-inner-box-inside img:hover{
+        cursor: grab;
+        margin: 5px 0 5px 0;
+        width: 50px;
+        height: 50px;
+        transition: 0.5s;
+    }
+
+    .second-offer-box-spacing{
+        margin: 5px 0 0 0;
+    }
 }
 
 /* Mobile aproach */
 @media only screen and (max-width: 600px){
     .navbar-image{
-        width: 70px;
-        justify-content: center;
+        display: none;
     }
 
     .welcomeButton{
@@ -222,7 +347,7 @@ ul div li a:hover{
     }
 
     .navbar-links{
-        width: calc(100%-70px);
+        width: 100%;
     }
 
     .starter-paragraph-text-sizing{
@@ -249,4 +374,27 @@ ul div li a:hover{
     .split2{
         width: 100%;
     }
+
+    .headerText{
+        font-size: 20px;
+    }
+
+    .offer-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-inner-box-inside{
+        font-size: 12;
+    }
+
+    .second-offer-box-spacing{
+        margin: 0;
+    }
+}
+
+
+button{
+    width: 100%;
+    height: 40px;
 }

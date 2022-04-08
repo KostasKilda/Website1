@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
+    min-width: fit-content;
 }
 
 /* Navbar css classes */
@@ -78,7 +79,7 @@ ul div li a:hover{
     width: 100%;
     max-width: 900px;
     height: auto;
-    border-radius: 15px;
+        margin: 20px 0 0 0;
 }
 
 .starter-paragraph-text-sizing{
@@ -177,26 +178,33 @@ ul div li a:hover{
         width: calc(100%-70px);
     }
 
-    .starter-paragraph{
-        flex-direction: column;
+    .starter-paragraph-text-sizing{
+        align-items: center;
+        width: 90%;
     }
 
-    .starter-paragraph-text-sizing{
-        margin: 10% 10px 5% 10px;
-        align-items: center;
+    .greeting-image-section img{
+        margin: 20px 0 0 0;
+    }
+
+    .welcomeButton{
+        line-height: 40px;
+        height: 40px;
+        width: 140px;
     }
 
     .starter-paragraph-text{
         min-width: 200px;
         margin-left: 0%;
+        font-size: 34px;
     }
 
     .split1{
-        width: 100%;
+        width: 50%;
     }
     
     .split2{
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -210,20 +218,35 @@ ul div li a:hover{
     .welcomeButton{
         line-height: 40px;
         height: 40px;
-        width: 130px;
+        width: 100px;
     }
 
     .navbar-links{
         width: calc(100%-70px);
     }
 
+    .starter-paragraph-text-sizing{
+        width: 100%;
+    }
+
     .starter-paragraph{
         flex-direction: column;
+        margin: 0;
     }
 
     .starter-paragraph-text{
-        margin: 5% 10% 5% 10%;
+        padding: 5% 15px 0 15px;
+        max-width: 400px;
         min-width: 200px;
-        font-size: 34px;
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .split1{
+        width: 100%;
+    }
+    
+    .split2{
+        width: 100%;
     }
 }

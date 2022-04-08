@@ -3,6 +3,8 @@ body{
     padding: 0;
     background-color: white;
 }
+
+/* Navbar css classes */
 .navbar-image{
     width: 50%;
     display: flex;
@@ -51,22 +53,15 @@ ul div li a:hover{
     color: orangered;
 }
 
-ul div img{
-    justify-content: left;
-    margin: 4px 12px 0px 4px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
+/* First section css classes */
 .starter-paragraph{
     padding: 60px 0 40px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    margin: 0 0 40px 0;
 }
 
 .split1{
@@ -84,7 +79,6 @@ ul div img{
     max-width: 900px;
     height: auto;
     border-radius: 15px;
-    margin-left: 5%;
 }
 
 .starter-paragraph-text-sizing{
@@ -94,7 +88,6 @@ ul div img{
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10%;
 }
 
 .starter-paragraph-text{
@@ -171,6 +164,8 @@ ul div img{
     transform: scale(1,1);
 }
 
+
+
 @media only screen and (max-width: 920px){
 
     .navbar-image{
@@ -180,9 +175,6 @@ ul div img{
 
     .navbar-links{
         width: calc(100%-70px);
-    }
-    .greeting-image-section img{
-        margin: 0;
     }
 
     .starter-paragraph{
@@ -232,11 +224,6 @@ ul div img{
     .starter-paragraph-text{
         margin: 5% 10% 5% 10%;
         min-width: 200px;
-        font-size: 40px;
+        font-size: 34px;
     }
-
-    .greeting-image-section img{
-        margin: 0 0 0 0;
-    }
-
 }

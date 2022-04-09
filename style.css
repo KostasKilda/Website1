@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: white;
     min-width: fit-content;
@@ -16,6 +20,9 @@ body{
 .navbar-links{
     width: 50%;
 }
+
+
+
 
 .navigation-outside{
     display: flex;
@@ -239,7 +246,7 @@ ul div li a:hover{
     border: 1px #C0C0C0 solid;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     min-width: 260px;
-    max-width: 400px;
+    max-width: 360px;
     width: 25%;
     max-height: 400px;
     text-align: center;
@@ -363,6 +370,19 @@ ul div li a:hover{
     .bottom-footer{
         font-size: 24px;
     }
+
+    .usefulLinks-box{
+        max-width: 460px;
+        max-height: 500px;
+    }
+
+    .usefulLinks-box-inside-header{
+        font-size: 34px;
+    }
+
+    .usefulLinks-box-inside-text{
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width: 920px){
@@ -441,9 +461,15 @@ ul div li a:hover{
 /* Mobile aproach */
 @media only screen and (max-width: 600px){
 
+    ul div li a{
+        margin: 12px 6px 0 6px;
+        font-size: 14px;
+    }
+
     ul div{
         flex-wrap: nowrap;
         margin: 0 5% 0 5%;
+        justify-content: flex-end;
     }
 
     .navbar-image{
